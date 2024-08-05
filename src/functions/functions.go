@@ -33,6 +33,21 @@ x, y int
 // 	return x + y;
 // }
 
+// func main() {
+// 	fmt.Println(add(42, 13))
+// }
+
+/*
+Multiple results
+A function can return any number of results.
+
+The swap function returns two strings.
+*/
+func swap(x, y string) (string, string) {
+	return y, x
+}
+
 func main() {
-	fmt.Println(add(42, 13))
+	a, b := swap("hello", "world")
+	fmt.Println(a, b)
 }
